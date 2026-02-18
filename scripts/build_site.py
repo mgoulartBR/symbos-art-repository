@@ -110,19 +110,21 @@ def main():
             author = infer_author(img_src)
 
             items.append({
-                "id": base,
-                "title": base,
-                "author": author,
-                "image": f"art/{img_src.name}",
-                "sgx": f"art/{sgx_src.name}"
-            })
+            "id": base,
+            "base": base,       # ← adiciona este campo
+            "title": base,
+            "author": author,
+            "image": f"art/{img_src.name}",
+            "sgx": f"art/{sgx_src.name}"
+        })
+
 
     # Sort alphabetically
     items.sort(key=lambda x: x["id"].lower())
 
     # Save gallery.json
     with open(GALLERY_JSON, "w", encoding="utf-8") as f:
-        json.dump(items, f, indent=2)
+        json.dump({"items": items}, f, indent=2)
 
     print(f"Built gallery with {len(items)} artworks.")
 
