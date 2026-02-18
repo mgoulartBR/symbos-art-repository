@@ -17,11 +17,14 @@ def main() -> None:
     if not art_dir.exists():
         fail("Missing required folder: /art")
 
-    # Map: base_name -> {exts found}
     found = {}
 
     for p in art_dir.rglob("*"):
         if p.is_dir():
+            continue
+
+        # Ignore .gitkeep
+        if p.name == ".gitkeep":
             continue
 
         ext = p.suffix.lower()
