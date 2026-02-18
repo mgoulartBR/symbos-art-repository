@@ -2,41 +2,61 @@
 
 Official curated repository for SymbOS/MSX compatible artworks.
 
-# 🚀 Submit your artwork
+## 🎨 Gallery
 
-1) Click the Fork button (top right)
-2) Go to /art folder
-3) Upload:
-   - yourfile.png (or .jpg)
-   - yourfile.sgx
-4) Click "Contribute" → Open Pull Request
+Browse the gallery at: https://mgoulartbr.github.io/symbos-art-repository/
 
-## Submission Rules
+## 🚀 Submit your artwork
 
-Each artwork MUST include:
+1. Click the **Fork** button (top right)
+2. Go to the `/art` folder
+3. Upload your files following the naming convention below
+4. Click **"Contribute"** → **Open Pull Request**
 
+## 📁 File Naming Convention
+
+Each artwork **must** include two files with the **same base name**:
+
+| File | Description |
+|------|-------------|
+| `title.png` (or `.jpg`) | Preview image |
+| `title.SGX` | SymbOS graphic file |
+
+### With author credit (recommended)
+
+Use **double underscore** `__` to separate title from author:
+
+kenshiro_city__zezinho2345.png
+kenshiro_city__zezinho2345.SGX
+
+This will display as: **"kenshiro city"** — *by zezinho2345*
+
+### Without author credit
+
+cool_wallpaper.png
+cool_wallpaper.SGX
+
+This will display as: **"cool wallpaper"** — *by Unknown*
+
+## 📋 Submission Rules
+
+Each artwork **MUST** include:
 - One PNG or JPEG file
-- One corresponding SGX file
+- One corresponding `.SGX` file
 - Both files must share the same base name
+- Files must be placed inside the `/art` folder
 
-Valid example:
-- title_author_res.png
-- title_author_res.sgx
+**Valid examples:**
+- `title__author.png` + `title__author.SGX` ✅
+- `title.png` + `title.SGX` ✅
 
-Invalid example:
-- title.png
-- author.sgx
+**Invalid examples:**
+- `title.png` only (missing SGX) ❌
+- `author.SGX` only (missing image) ❌
+- Files outside `/art` folder ❌
 
-Allowed resolutions (SGX):
-- 256x212
-- 512x212
-- 512x424
-- Any supported by SymbOS
+## 🔧 Allowed resolutions (SGX)
 
-Submission process
-
-- Open an Issue using the “Artwork submission” template.
-- Attach the files (PNG/JPEG + SGX) with the same base filename.
-- A maintainer will review and add the files to /art/.
-- Only official SymbOS 16-color palette allowed.
-- Content must be original work by the submitting author.
+- 256×212
+- 512×212
+- 512×424
