@@ -11,12 +11,12 @@ Each artwork MUST include:
 - Both files must share the same base name
 
 Valid example:
-  kenshiro.png
-  kenshiro.sgx
+- title_author_res.png
+- title_author_res.sgx
 
 Invalid example:
-  kenshiro.png
-  hotukonoken.sgx
+- title.png
+- author.sgx
 
 Allowed resolutions (SGX):
 - 256x212
