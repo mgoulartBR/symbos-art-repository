@@ -60,3 +60,43 @@ Each artwork **MUST** include:
 - 256×212
 - 512×212
 - 512×424
+
+# AI Prompt suggestion
+
+Create a retro pixel art wallpaper using ONLY the official 16-color SymbOS palette.
+
+STRICT COLOR LIMIT — Do not use any colors outside this exact RGB list:
+
+0  (255,255,146)
+1  (0,0,0)
+2  (255,146,0)
+3  (146,0,0)
+4  (0,255,255)
+5  (0,0,146)
+6  (146,146,255)
+7  (0,0,255)
+8  (255,255,255)
+9  (0,146,0)
+10 (0,255,0)
+11 (255,0,255)
+12 (255,255,0)
+13 (146,146,146)
+14 (255,146,146)
+15 (255,0,0)
+
+Style requirements:
+True 16-color pixel art
+No gradients unless simulated using dithering
+No blended or intermediate colors
+Hard shading and strong contrast
+MSX / 8-bit / early 16-bit aesthetic
+Clean pixel edges
+No modern digital painting effects
+No soft lighting
+No color smoothing
+No anti-aliasing
+
+Resolution: 256x212 or 512x212 (MSX-style scaling)
+
+Theme: [ENTER THE DETAILED THEME HERE]
+The image must look like it was originally designed within a strict 16-color hardware limitation.
