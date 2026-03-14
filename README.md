@@ -100,4 +100,5 @@ Style requirements:
 Resolution: 256x212 or 512x212 (MSX-style scaling)
 
 Theme: [ENTER THE DETAILED THEME HERE]
+
 The image must look like it was originally designed within a strict 16-color hardware limitation.
